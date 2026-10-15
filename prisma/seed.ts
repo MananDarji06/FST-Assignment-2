@@ -33,7 +33,7 @@ async function main() {
   const adminUser = await prisma.user.create({
     data: {
       name: "Admin User",
-      email: "admin@aurastudio.dev",
+      email: "admin@lumis.dev",
       emailVerified: true,
       role: "ADMIN",
     },
@@ -129,7 +129,7 @@ async function main() {
   console.log("âœ… Created 150 audit log entries")
 
   console.log("\nðŸŽ‰ Seed complete!")
-  console.log(`   Admin credentials: admin@aurastudio.dev`)
+  console.log(`   Admin credentials: admin@lumis.dev`)
   console.log(`   Total users: ${allUsers.length}`)
   console.log(`   Total products: ${products.length}`)
   console.log(`   Total orders: ${orders.length}`)
